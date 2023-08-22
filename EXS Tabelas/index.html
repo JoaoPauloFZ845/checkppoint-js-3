@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Adicionar Nova Tarefa</h2>
+<form id="formulariotarefa">
+    Descrição: <input type="text" id="descricao"><br>
+    Autor: <input type="text" id="autor"><br>
+    Departamento: <input type="text" id="departamento"><br>
+    Importância: <input type="number" id="importancia"><br>
+    Valor (Opcional): <input type="number" id="valor"><br>
+    Duração (Opcional): <input type="text" id="duracao">
+    <button type="button" onclick="adicionartarefa()">Adicionar</button>
+</form>
+
+<h2>Lista de Tarefas</h2>
+<table id="tabelatarefas" border="1">
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Autor</th>
+            <th>Departamento</th>
+            <th>Importância</th>
+            <th>Valor</th>
+            <th>Duração</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<h2>Lista de Tarefas por Importância</h2>
+<ul id="listaimportancia"></ul>
+
+<script src="script.js"></script>
+
+<br>
+<h3>Aluno: João Paulo Fonseca Zamperlini | RM:99279</h3>
+</body>
+</html>
